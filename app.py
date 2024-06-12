@@ -8,7 +8,7 @@ from datetime import datetime
 
 
 # Initialiser Firebase
-cred = credentials.Certificate("static\json\medipsychiatre-d9468-firebase-adminsdk-wkpmq-be65e67b62.json")
+cred = credentials.Certificate("static/json/medipsychiatre-d9468-firebase-adminsdk-wkpmq-be65e67b62.json")
 firebase_admin.initialize_app(cred)
 db = firestore.client()
 
