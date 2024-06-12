@@ -72,12 +72,21 @@
 			<div class="topbar">
 				<div class="container">
 					<div class="row">
-							<!-- Top -->
-							<ul class="top-contact">
-								<li><i class="fa fa-play"></i><a href="{{ url_for('index') }}">Vous êtes patient</a></li>
-								<li><i class="fa fa-pause"></i><a href="{{ url_for('doctor') }}">Vous êtes psychiatre</a></li>
+						<div class="col-lg-6 col-md-5 col-12">
+							<!-- Contact -->
+							<ul class="top-link">
+								<li><a href="{{ url_for('static', filename='img/Aide.mp4') }}" class="video video-popup mfp-iframe"><i class="fa fa-question-circle"></i>Aide</a></li>
 							</ul>
-							<!-- End Top -->
+							<!-- End Contact -->
+						</div>
+						<div class="col-lg-6 col-md-7 col-12">
+							<!-- Top Contact -->
+							<ul class="top-contact">
+								<li><i class="fa fa-pause"></i><a href="{{ url_for('index') }}">Vous êtes patient</a></li>
+								<li><i class="fa fa-play"></i><a href="{{ url_for('doctor') }}">Vous êtes psychiatre</a></li>
+							</ul>
+							<!-- End Top Contact -->
+						</div>
 					</div>
 				</div>
 			</div>
